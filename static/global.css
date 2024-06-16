@@ -141,25 +141,6 @@ li form {
     margin: 0.5rem 0;
 }
 
-nav {
-    position: relative;
-    display: flex;
-    gap: 1em;
-    padding: 1em;
-    background: var(--bg-2);
-    z-index: 2;
-    margin: 0 0 1em 0;
-    border-radius: var(--border-radius);
-}
-
-nav a {
-    text-decoration: none;
-}
-
-nav a[aria-current='true'] {
-    border-bottom: 2px solid;
-}
-
 ul:has(form) {
     list-style: none;
     padding: 0;

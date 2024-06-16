@@ -2,7 +2,7 @@
   import {enhance} from '$app/forms';
   import { fly, slide } from 'svelte/transition';
 
-	export let data;
+  export let data;
   export let form: { description?: string; error?: string };
 
   let creating = false;
@@ -10,7 +10,7 @@
 </script>
 
 <div class="centered">
-	<h1>todos</h1>
+  <h1>todos</h1>
 
   {#if form?.error}
     <p class="error">{form.error}</p>
