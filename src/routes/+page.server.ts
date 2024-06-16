@@ -6,10 +6,7 @@ export type PageData = {
 
 // loaded on server side, so use ServerLoad type
 export const load: ServerLoad = ({ cookies }) => {
-  const visited = cookies.get('visited');
-
-  cookies.set('visited', 'true', { path: '/', httpOnly: false });
-
+  const visited = cookies.get('logged_in');
   return {
     visited: visited === 'true'
   };
